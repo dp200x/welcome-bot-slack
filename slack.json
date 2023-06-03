@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "get-hooks": "deno run -q --unstable --allow-read --allow-net https://deno.land/x/deno_slack_hooks@1.0.1/mod.ts",
+    "get-manifest": "deno run -q --config=deno.jsonc --unstable --allow-read --allow-net --allow-env https://deno.land/x/deno_slack_hooks@1.0.1/get_manifest.ts",
+    "get-trigger": "deno run -q --config=deno.jsonc --unstable --allow-read --allow-net --allow-env https://deno.land/x/deno_slack_hooks@1.0.1/get_trigger.ts",
+    "install-update": "deno run -q --config=deno.jsonc --unstable --allow-run --allow-read --allow-write --allow-net https://deno.land/x/deno_slack_hooks@1.0.1/install_update.ts",
+    "start": "deno run -q --config=deno.jsonc --unstable --allow-read --allow-net --allow-run --allow-env ./customfiles/deno-slack-runtime/src/local-run.ts"
+  }
+}
